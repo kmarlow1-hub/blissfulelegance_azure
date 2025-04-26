@@ -1,0 +1,917 @@
+/*----------------------- COLOR PALLETE -----------------------
+
+Deep Navy - #010D26
+Dark Blue - #6F87A6
+Baby Blue - #D0E2F2
+Deep Red - #9d2118
+/*----------------------- NAV BAR -----------------------*/
+
+.main_nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    list-style: none;
+    background-color: #010D26;
+    padding: .6em;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px
+}
+
+.main_nav a {
+    color: #D0E2F2;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+
+.main_nav a:hover {
+    background-color: #D0E2F2;
+    color: #010D26
+}
+
+li.logo {
+    margin-right: auto;
+}
+
+li.logo a:hover {
+    background-color: #010D26;
+}
+
+/*----------------------- MAIN CONTENT -----------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    color: black;
+    background-color:#6F87A6;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font: bold 3em Georgia, serif;
+    color: #010D26;
+    text-shadow: .05em .05em .1em black;
+}
+
+h2 {
+    font: bold 1.3em Georgia, serif;
+    color: #010D26;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: bold 1em Georgia, serif;
+    color: #010D26;
+    text-transform: uppercase;
+}
+
+.footerheader {
+    color: white;
+}
+
+footer {
+    background-color: #010D26;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.footernav {
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/*----------------------- HERO IMAGE -----------------------*/
+
+.hero_image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)),url(images/banner/threewomen.jpg);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.contact_image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)),url(images/banner/contactus.jpg);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mens_image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)),url(images/banner/twomen.jpg);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.womens_image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)),url(images/banner/twowomen.jpg);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.allclothing_image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)),url(images/banner/manandwoman.jpg);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.aboutus_image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)),url(images/other/hangingclothes.jpg);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hero_header {
+    text-align: center;
+    position: relative;
+    color: white;
+    top:40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 0px;
+}
+
+.hero_text {
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 50%;
+    text-shadow: .05em .05em .1em black;
+    font-size: medium;
+    margin: 20px;
+}
+/*----------------------- INDEX GRID -----------------------*/
+
+#index_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+        'specials   specials    specials    specials'
+        'goldtop    redsweater  whiteoutfit leathergetup'
+        'newreleases    newreleases newreleases newreleases'
+        'orangejacket   whitedress  denimboy    yellowumbrella'
+        'shopwomens shopwomens  shopmens    shopmens'
+        'bestsellers    bestsellers bestsellers bestsellers'
+        'luxeblack  luxeblack   darkcowgirl darkcowgirl'
+        'reviews    reviews reviews reviews'
+        'newsletter newsletter  newsletter  newsletter'
+    ;
+    justify-items: center;
+    background-color: #D0E2F2;
+    margin: 0 auto;
+}
+
+#specials {
+    grid-area: specials;
+    object-fit: cover;
+    text-align: center;
+}
+
+.button {
+    background-color: #010D26;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    margin: 6px 3px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.button:hover {
+    background-color: white;
+    color: #010D26
+}
+
+.goldtop {
+    grid-area: goldtop;
+    object-fit: cover;
+    text-align: center;
+}
+
+.redsweater {
+    grid-area: redsweater;
+    object-fit: cover;
+    text-align: center;
+}
+
+.whiteoutfit {
+    grid-area: whiteoutfit;
+    object-fit: cover;
+    text-align: center;
+}
+
+.leathergetup {
+    grid-area: leathergetup;
+    object-fit: cover;
+}
+
+#newreleases {
+    grid-area: newreleases;
+    object-fit: cover;
+    text-align: center;
+}
+
+.orangejacket {
+    grid-area: orangejacket;
+    object-fit: cover;
+    text-align: center;
+}
+
+.whitedress {
+    grid-area: whitedress;
+    object-fit: cover;
+    text-align: center;
+}
+
+.denimboy {
+    grid-area: denimboy;
+    object-fit: cover;
+    text-align: center;
+}
+
+.yellowumbrella {
+    grid-area: yellowumbrella;
+    object-fit: cover;
+    text-align: center;
+}
+
+.shopwomens {
+    grid-area: shopwomens;
+    object-fit: cover;
+    text-align: center;
+}
+
+.shopmens {
+    grid-area: shopmens;
+    object-fit: cover;
+    text-align: center;
+}
+
+#bestsellers {
+    grid-area: bestsellers;
+    object-fit: cover;
+    text-align: center;
+}
+
+.luxeblack {
+    grid-area: luxeblack;
+    object-fit: cover;
+    text-align: center;
+}
+
+.darkcowgirl {
+    grid-area: darkcowgirl;
+    object-fit: cover;
+    text-align: center;
+}
+
+#reviews {
+    grid-area: reviews;
+    object-fit: cover;
+    text-align: center;
+}
+
+#newsletter {
+    grid-area: newsletter;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*----------------------- INDEX SPACING -----------------------*/
+
+#specials {
+    margin: 40px 0px;
+}
+
+h2 {
+    padding: 10px 0px;
+}
+
+strong {
+    color: #9d2118
+}
+
+ul {
+    list-style: none;
+}
+
+.goldtop, .redsweater, .whiteoutfit, .leathergetup, 
+.orangejacket, .whitedress, .denimboy, .yellowumbrella {
+    margin: 40px 10px;
+}
+
+.luxeblack, .darkcowgirl {
+    margin: 40px 15px;
+}
+
+#newsletter {
+    margin: 40px 0px;
+    background-color: #6F87A6;
+    padding: 0px  0px 40px 0px;
+}
+/*----------------------- CONTACT US GRID -----------------------*/
+
+#contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'phonecontact emailcontact'
+    ;
+    justify-items: center;
+    background-color: #D0E2F2;
+    margin: 0 auto;
+}
+
+#phonecontact {
+    grid-area: phonecontact;
+    object-fit: cover;
+    text-align: center;
+}
+
+#emailcontact {
+    grid-area: emailcontact;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*----------------------- CONTACT US SPACING -----------------------*/
+
+#phonecontact, #emailcontact {
+    margin: 20px 0px;
+}
+/*----------------------- ABOUT US GRID -----------------------*/
+
+#aboutus_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    'story          story'
+    'values         values'
+    'ecofriendly    community'
+    ;
+    justify-items: center;
+    background-color: #D0E2F2;
+    margin: 0 auto;
+}
+
+#story {
+    grid-area: story;
+    object-fit: cover;
+    text-align: center;
+}
+
+#values {
+    grid-area: values;
+    object-fit: cover;
+    text-align: center;
+}
+
+.ecofriendly {
+    grid-area: ecofriendly;
+    object-fit: cover;
+    text-align: center;
+}
+
+.community {
+    grid-area: community;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*----------------------- ABOUT US SPACING -----------------------*/
+
+#story {
+    margin: 20px;
+}
+
+.ecofriendly, .community {
+    margin: 40px 20px;
+}
+
+/*----------------------- ALL CLOTHING GRID -----------------------*/
+#allclothing_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+    'womensclothing womensclothing  womensclothing'
+    'formal formal  formal'
+    'whitedress goldtop paris'
+    'casual casual  casual'
+    'orangejacket redsweater darkcowgirl'
+    'mensclothing   mensclothing    mensclothing'
+    'laidback   laidback    laidback'
+    'denimboy   yellowbrella    luxeblack'
+    'fashionable    fashionable fashionable'
+    'whiteoutfit    leathergetup    officegrey'
+    ;
+    justify-items: center;
+    background-color: #D0E2F2;
+    margin: 0 auto;
+}
+
+#womensclothing {
+    grid-area: womensclothing;
+    object-fit: cover;
+    text-align: center;
+}
+
+#formal {
+    grid-area: formal;
+    object-fit: cover;
+    text-align: center;
+}
+
+.whitedress {
+    grid-area: whitedress;
+    object-fit: cover;
+    text-align: center;
+}
+
+.goldtop {
+    grid-area: goldtop;
+    object-fit: cover;
+    text-align: center;
+}
+
+.paris {
+    grid-area: paris;
+    object-fit: cover;
+    text-align: center;
+}
+
+#casual {
+    grid-area: casual;
+    object-fit: cover;
+    text-align: center;
+}
+
+.orangejacket {
+    grid-area: orangejacket;
+    object-fit: cover;
+    text-align: center;
+}
+
+.redsweater {
+    grid-area: redsweater;
+    object-fit: cover;
+    text-align: center;
+}
+
+.darkcowgirl {
+    grid-area: darkcowgirl;
+    object-fit: cover;
+    text-align: center;
+}
+
+#mensclothing {
+    grid-area: mensclothing;
+    object-fit: cover;
+    text-align: center;
+}
+
+#laidback {
+    grid-area: laidback;
+    object-fit: cover;
+    text-align: center;
+}
+
+.denimboy {
+    grid-area: denimboy;
+    object-fit: cover;
+    text-align: center;
+}
+
+.yellowbrella {
+    grid-area: yellowbrella;
+    object-fit: cover;
+    text-align: center;
+}
+
+.luxeblack {
+    grid-area: luxeblack;
+    object-fit: cover;
+    text-align: center;
+}
+
+#fashionable {
+    grid-area: fashionable;
+    object-fit: cover;
+    text-align: center;
+}
+
+.whiteoutfit {
+    grid-area: whiteoutfit;
+    object-fit: cover;
+    text-align: center;
+}
+
+.leathergetup {
+    grid-area: leathergetup;
+    object-fit: cover;
+    text-align: center;
+}
+
+.officegrey {
+    grid-area: officegrey;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*----------------------- ALL CLOTHING SPACING -----------------------*/
+
+#womensclothing, #mensclothing {
+    margin: 10px;
+}
+
+.whitedress, .goldtop, .paris, .orangejacket, .redsweater, .darkcowgirl, 
+.denimboy, .yellowbrella, .luxeblack, .whiteoutfit, .leathergetup, .officegrey {
+    margin: 40px 10px;
+}
+/*----------------------- WOMENS GRID -----------------------*/
+
+#womens_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    'formal formal  formal'
+    'whitedress goldtop paris'
+    'casual casual  casual'
+    'orangejacket   redsweater  darkcowgirl'
+    ;
+    justify-items: center;
+    background-color: #D0E2F2;
+    margin: 0 auto;  
+}
+
+#formal {
+    grid-area: formal;
+    object-fit: cover;
+    text-align: center;
+}
+
+.whitedress {
+    grid-area: whitedress;
+    object-fit: cover;
+    text-align: center;
+}
+
+.goldtop {
+    grid-area: goldtop;
+    object-fit: cover;
+    text-align: center;
+}
+
+.paris {
+    grid-area: paris;
+    object-fit: cover;
+    text-align: center; 
+}
+
+#casual {
+    grid-area: casual;
+    object-fit: cover;
+    text-align: center;
+}
+
+.orangejacket {
+    grid-area: orangejacket;
+    object-fit: cover;
+    text-align: center;
+}
+
+.redsweater {
+    grid-area: redsweater;
+    object-fit: cover;
+    text-align: center;
+}
+
+.darkcowgirl {
+    grid-area: darkcowgirl;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*----------------------- WOMENS SPACING -----------------------*/
+
+.whitedress, .goldtop, .paris, .orangejacket, .redsweater, .darkcowgirl {
+    margin: 40px 10px;
+}
+
+/*----------------------- MENS GRID -----------------------*/
+
+#mens_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    'laidback   laidback    laidback'
+    'denimboy yellowbrella luxeblack'
+    'fashionable    fashionable fashionable'
+    'whiteoutfit    leathergetup    officegrey'
+    ;
+    justify-items: center;
+    background-color: #D0E2F2;
+    margin: 0 auto;  
+}
+
+#laidback {
+    grid-area: laidback;
+    object-fit: cover;
+    text-align: center;
+}
+
+.denimboy {
+    grid-area: denimboy;
+    object-fit: cover;
+    text-align: center;
+}
+
+.yellowbrella {
+    grid-area: yellowbrella;
+    object-fit: cover;
+    text-align: center;
+}
+
+.luxeblack {
+    grid-area: luxeblack;
+    object-fit: cover;
+    text-align: center;
+}
+
+#fashionable {
+    grid-area: fashionable;
+    object-fit: cover;
+    text-align: center;
+}
+
+.whiteoutfit {
+    grid-area: whiteoutfit;
+    object-fit: cover;
+    text-align: center;
+}
+
+.leathergetup {
+    grid-area: leathergetup;
+    object-fit: cover;
+    text-align: center;
+}
+
+.officegrey {
+    grid-area: officegrey;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*----------------------- MENS SPACING -----------------------*/
+
+.denimboy, .yellowbrella, .luxeblack, .whiteoutfit, .leathergetup, .officegrey {
+    margin: 40px 10px;
+}
+
+/*----------------------- MEDIA QUERIES -----------------------*/
+
+/* INDEX */
+
+/* TABLET */@media screen and (max-width: 1200px){
+    #index_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(11,auto);
+        grid-template-areas:
+        'specials   specials'
+        'goldtop    redsweater'
+        'whiteoutfit leathergetup'
+        'newreleases    newreleases'
+        'orangejacket   whitedress'
+        'denimboy    yellowumbrella'
+        'shopwomens shopmens'
+        'bestsellers    bestsellers'
+        'luxeblack  darkcowgirl'
+        'reviews    reviews'
+        'newsletter newsletter';
+
+        justify-items: center;
+        margin: 0 auto;
+        }
+    }
+
+    /* PHONE */@media screen and (max-width: 800px) {
+        #index_grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(17,auto);
+            grid-template-areas:
+            'specials'
+            'goldtop'
+            'redsweater'
+            'whiteoutfit'
+            'leathergetup'
+            'newreleases'
+            'orangejacket'
+            'whitedress'
+            'denimboy'
+            'yellowumbrella'
+            'shopwomens'
+            'shopmens'
+            'bestsellers'
+            'luxeblack'
+            'darkcowgirl'
+            'reviews'
+            'newsletter';
+
+            justify-items: center;
+            margin: 0 auto;
+        }
+    }
+
+    /* ALL CLOTHING */
+
+    /* TABLET */@media screen and (max-width: 1200px){
+    #allclothing_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(14,auto);
+        grid-template-areas:
+        'womensclothing womensclothing'
+        'formal formal'
+        'whitedress goldtop'
+        'paris  paris'
+        'casual casual'
+        'orangejacket redsweater'
+        'darkcowgirl    darkcowgirl'
+        'mensclothing   mensclothing'
+        'laidback   laidback'
+        'denimboy   yellowbrella'
+        'luxeblack luxeblack'
+        'fashionable    fashionable'
+        'whiteoutfit    leathergetup'
+        'officegrey officegrey';
+
+        justify-items: center;
+        margin: 0 auto;
+        }
+    }
+
+    /* PHONE */@media screen and (max-width: 800px){
+    #allclothing_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(18,auto);
+        grid-template-areas:
+        'womensclothing'
+        'formal'
+        'whitedress'
+        'goldtop'
+        'paris'
+        'casual'
+        'orangejacket'
+        'redsweater'
+        'darkcowgirl'
+        'mensclothing'
+        'laidback'
+        'denimboy'
+        'yellowbrella'
+        'luxeblack'
+        'fashionable'
+        'whiteoutfit'
+        'leathergetup'
+        'officegrey';
+
+        justify-items: center;
+        margin: 0 auto;
+        }
+    }
+
+/* WOMENS */
+
+    /* TABLET */@media screen and (max-width: 1200px){
+    #womens_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas:
+        'formal formal'
+        'whitedress goldtop'
+        'paris  paris'
+        'casual casual'
+        'orangejacket   redsweater'
+        'darkcowgirl    darkcowgirl';
+
+        justify-items: center;
+        margin: 0 auto;
+        }
+    }
+
+    /* PHONE */@media screen and (max-width: 800px){
+        #womens_grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8,auto);
+            grid-template-areas:
+            'formal'
+            'whitedress'
+            'goldtop'
+            'paris'
+            'casual'
+            'orangejacket'
+            'redsweater'
+            'darkcowgirl';
+    
+            justify-items: center;
+            margin: 0 auto;
+            }
+        }
+
+/* MENS */
+
+    /* TABLET */@media screen and (max-width: 1200px){
+        #mens_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(6,auto);
+            grid-template-areas:
+            'laidback   laidback'
+            'denimboy yellowbrella'
+            'luxeblack  luxeblack'
+            'fashionable    fashionable'
+            'whiteoutfit    leathergetup'
+            'officegrey officegrey';
+
+            justify-items: center;
+            margin: 0 auto;
+            }
+        }
+
+    /* PHONE */@media screen and (max-width: 800px){
+        #mens_grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8,auto);
+            grid-template-areas:
+            'laidback'
+            'denimboy'
+            'yellowbrella'
+            'luxeblack'
+            'fashionable'
+            'whiteoutfit'
+            'leathergetup'
+            'officegrey';
+
+            justify-items: center;
+            margin: 0 auto;
+            }
+        }
